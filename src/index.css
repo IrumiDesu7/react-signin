@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.getting-started {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.getting-started h2 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 46px;
+}
+.getting-started p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* FORM */
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input {
+  border-radius: 10px;
+  border: 1px solid #4e5d7833;
+  width: 500px;
+  height: 52px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 15px;
+}
+.login-btn {
+  background-color: #377dff;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px;
+  border: 0;
+  border-radius: 10px;
+  width: 500px;
+}
+.error-container {
+  position: relative;
+  top: -10px;
+  color: red;
+  font-size: 11px;
+}
+
+/* Password field */
+.password-container {
+  position: relative;
+}
+.password-toggle {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  border: 0;
+  cursor: pointer;
 }
