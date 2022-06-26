@@ -26,6 +26,7 @@ body,
   align-items: center;
   gap: 10px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .getting-started h2 {
   font-weight: 900;
@@ -77,7 +78,8 @@ input {
 }
 .password-toggle {
   position: absolute;
-  right: 0;
+  height: 20px;
+  right: 5px;
   top: 15px;
   border: 0;
   cursor: pointer;

@@ -1,6 +1,8 @@
-import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
+import eye from '../eye.svg';
+import eyeSlashed from '../eye_slashed.svg';
 
+console.log(eye);
 export default function LoginForm(props) {
   const [details, setDetails] = useState({
     name: '',
@@ -58,13 +60,18 @@ export default function LoginForm(props) {
               onChange={handleChange}
               value={details.password}
             />
-            <button
+            {/* <button
               className='password-toggle'
               type='button'
               onClick={togglePassword}
-            >
-              View
-            </button>
+            > */}
+            <img
+              className='password-toggle'
+              onClick={togglePassword}
+              src={passwordType === 'password' ? eyeSlashed : eye}
+              alt=''
+            />
+            {/* </button> */}
           </div>
           {props.error !== '' && (
             <div className='error-container'>
