@@ -64,6 +64,7 @@ input {
   border: 0;
   border-radius: 10px;
   width: 500px;
+  cursor: pointer;
 }
 .error-container {
   position: relative;
@@ -78,9 +79,27 @@ input {
 }
 .password-toggle {
   position: absolute;
-  height: 20px;
-  right: 5px;
-  top: 15px;
+  height: 15px;
+  right: 15px;
+  top: 17px;
   border: 0;
+  cursor: pointer;
+}
+
+/* LOGOUT */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.btn-logout {
+  background-color: #377dff;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  width: 500px;
+  height: 50px;
+  font-size: ;
   cursor: pointer;
 }

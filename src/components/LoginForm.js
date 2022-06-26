@@ -32,6 +32,12 @@ export default function LoginForm(props) {
 
   return (
     <div className='form-container'>
+      <div className='getting-started'>
+        <h2>Login</h2>
+        <p>
+          Login so you can continue to experience the best features we provided.
+        </p>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className='form-inner'>
           <input
